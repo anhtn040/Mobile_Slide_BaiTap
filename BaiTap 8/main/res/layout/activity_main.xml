@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý sinh viên"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#83BDEC"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã sinh viên"
+        android:id="@+id/edtMaSV"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập họ tên sinh viên"
+        android:id="@+id/edtHoten"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ngày sinh sinh viên"
+        android:id="@+id/edtNgaysinh"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:checked="true"
+            android:id="@+id/radNam"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nu"
+            android:checked="true"
+            android:id="@+id/radNu"/>
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnThem" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnXoa" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnSua" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:id="@+id/btnThoat" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/svTimSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#83BDEC"
+        android:dividerHeight="2dp"
+        android:id="@+id/lvDanhSach">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chon Het"
+            android:id="@+id/btnChonHet"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bo Chon"
+            android:id="@+id/btnBoChon"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xoa DS"
+            android:id="@+id/btnXoaDS"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
