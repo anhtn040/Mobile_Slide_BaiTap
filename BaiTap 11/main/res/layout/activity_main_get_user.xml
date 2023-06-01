@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGetUser"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnGetUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get user"/>
+    <Button
+        android:id="@+id/btnGetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get text"/>
+    <ListView
+        android:id="@+id/lvDanhSach"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        />
+
+</LinearLayout>
